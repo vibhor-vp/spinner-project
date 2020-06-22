@@ -1,0 +1,4 @@
+<div>
+    <input type="number" [(ngModel)]="luckyNumber" placeholder="Enter your Lucky Number">
+</div>
+<spinner [spinnersCount]="3" (spinnerStopped)="checkSpinnerNumber($event)"></spinner>

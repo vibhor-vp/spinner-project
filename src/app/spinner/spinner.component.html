@@ -1,0 +1,15 @@
+<div class="container" style="display: inline-flex;">
+    <div *ngFor="let spinner of spinners; let i=index" class="panel panel-default">
+        <label class="panel-body">{{spinner.value}}</label>
+    </div>
+    <!-- <div>
+        <label>{{spinner.spinner2}}</label>
+    </div>
+    <div>
+        <label>{{spinner.spinner3}}</label>
+    </div> -->
+</div>
+<div>
+    <button *ngIf="!timerStarted" (click)="startSpinner()">Start</button>
+    <button *ngIf="timerStarted" (click)="stopSpinner()">STOP</button>
+</div>
